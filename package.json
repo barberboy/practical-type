@@ -1,0 +1,29 @@
+{
+  "name": "practical-type",
+  "version": "1.0.0",
+  "description": "Learn and practice touch typing with timed exercises using the most common words in the English language.",
+  "main": "generate.js",
+  "scripts": {
+    "build": "pug templates/{index,learn,colemak,dvorak}.pug -o docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typing", "touch-typing", "colemak", "keyboard"],
+  "author": "Benjamin Barber",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barberboy/practical-type.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barberboy/practical-type/issues"
+  },
+  "homepage": "https://github.com/barberboy/practical-type#readme"
+}
