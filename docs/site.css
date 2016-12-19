@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 50em;
+  font-size: 16px;
+  margin: auto;
+  padding: 2em;
+}
+body,
+input,
+button {
+  font-family: Courier New, Courier, monospace;
+}
+button {
+  font-size: 16px;
+  background: #efefef;
+  border: 0;
+  box-shadow: 1px 1px 1px #aaa;
+  margin: 2px;
+}
+img.keyboard {
+  display: inline-block;
+  margin: 3em auto;
+  max-width: 100%;
+}
+nav {
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+  padding: 1em;
+}
+input, 
+.text {
+  width: 100%;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 3px;
+  position: relative;
+}
+.frame {
+  margin-top: 2em;
+  height: 85px;
+  overflow: hidden;
+}
+input {
+  box-sizing: border-box;
+  padding-right: 5%;
+  outline: 0;
+}
+.incorrect {
+  margin-top: 1em;
+}
+input,
+.incorrect {
+  background-color: #fdd;
+}
+.correct,
+.ok {
+  background-color: #dfd;
+}
+
+/** placement marker */
+.correct {
+  position: relative;
+  display: inline;
+}
+.correct::after {
+  content: " ";
+  color: transparent;
+  border-bottom: 3px solid #ddd;
+  position: absolute;
+  right: -.6em;
+  width: .55em;
+  height: 1.15em;
+}
+
+/** hide the input now that we have all the styling in place */
+.hide-input input {
+  opacity: 0;
+  box-sizing: content-box;
+  height: 0;
+  padding: 0;
+  border: 0;
+}
+.hide-input .frame {
+  margin-top: 0;
+}
+.hide-keyboard img.keyboard {
+  display: none;
+}
