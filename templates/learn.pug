@@ -1,0 +1,16 @@
+extends layout
+
+block head
+  title The Practical Type | Learn touch typing quickly and effectively
+  meta(
+    name="description"
+    content="Learn and practice touch typing with timed exercises using the most common words in the English language."
+  )
+
+block body
+  include learn-buttons.pug
+
+  img.keyboard(src="assets/us.png" alt="U.S. keyboard layout")
+  
+  script(type="text" class="standard")
+    include ../dict/learn.txt

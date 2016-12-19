@@ -1,0 +1,16 @@
+extends layout
+
+block head
+  title The Practical Type | Learn the Colemak keyboard layout quickly and effectively
+  meta(
+    name="description"
+    content="Learn and practice the Colemak keyboard with timed exercises using the most common words in the English language."
+)
+
+block body
+  include learn-buttons.pug
+
+  img.keyboard(src="assets/colemak.png" alt="Colemak keyboard layout")
+
+  script(type="text" class="standard")
+    include ../dict/learn.txt

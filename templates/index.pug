@@ -1,0 +1,21 @@
+extends layout
+
+block head
+  title The Practical Type | Top 1000 English Words
+  meta(
+    name="description"
+    content="Practice typing with the 1000 most commonly used words in the English language"
+  )
+
+block body
+  button.refresh Begin Anew!
+  button.toggle-input Show What I'm Typing
+
+  nav
+    p
+      a(href="learn.html") Learn Touch Typing
+      a(href="colemak.html") Learn Colemak Keyboard
+      a(href="colemak.html") Learn Dvorak Keyboard
+  
+  script(type="text" class="standard")
+    include ../dict/corpus.txt
